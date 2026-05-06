@@ -1,4 +1,20 @@
 import telebot
+from flask import Flask
+from threading import Thread
+
+app = Flask('')
+
+@app.route('/')
+def home():
+    return "SIYA DIGITAL IS ALIVE!"
+
+def run():
+  app.run(host='0.0.0.0', port=8080)
+
+def keep_alive():
+    t = Thread(target=run)
+    t.start()
+    
 from telebot import types
 import sqlite3
 from datetime import datetime
@@ -257,4 +273,5 @@ if __name__ == "__main__":
     print("========================================")
     print("   SIYA DIGITAL BOT IS NOW LIVE!        ")
     print("========================================")
+    keep_alive()
     bot.infinity_polling()
