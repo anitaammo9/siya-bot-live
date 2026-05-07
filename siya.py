@@ -9,7 +9,7 @@ from pymongo import MongoClient
 
 # --- अपनी डिटेल्स यहाँ भरें ---
 API_TOKEN = '8321892139:AAHO4ddIOAf6tR2HqbAWZcuTpLZVzlSChw8' # BotFather से मिला नया टोकन
-CLUSTER_URL = 'mongodb+srv://Siya999:<db_password>@cluster0.b7sbepj.mongodb.net/?appName=Cluster0' # मोंगोडीबी लिंक
+CLUSTER_URL = 'mongodb+srv://Siya999:<@Atypn7702P@>@cluster0.b7sbepj.mongodb.net/?appName=Cluster0' # मोंगोडीबी लिंक
 ADMIN_ID = 5042331374  # अपनी असली टेलीग्राम ID यहाँ लिखें
 
 bot = telebot.TeleBot(API_TOKEN, threaded=False)
