@@ -37,14 +37,19 @@ def send_welcome(message):
     bot.reply_to(message, f"👋 नमस्ते {user_name}! सिया बॉट अब ऑनलाइन है।")
 
 if __name__ == "__main__":
-    # Flask सर्वर शुरू करें
     t = Thread(target=run)
     t.daemon = True
     t.start()
     
-    print("SIYA BOT IS STARTING...")
+    print("========================================")
+    print("   SIYA DIGITAL BOT IS STARTING...      ")
+    print("========================================")
+    
     try:
-        bot.infinity_polling(timeout=10, long_polling_timeout=5)
+        # skip_pending=True पुराने सारे अटके मैसेज को साफ़ कर देगा
+        bot.polling(none_stop=True, skip_pending=True, timeout=60)
     except Exception as e:
         print(f"Error: {e}")
+        time.sleep(5)
+        
         
