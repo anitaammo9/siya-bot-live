@@ -150,6 +150,12 @@ if __name__ == "__main__":
     print("========================================")
     print("   SIYA DIGITAL BOT IS NOW LIVE!        ")
     print("========================================")
-    keep_alive()
-    bot.infinity_polling()
+    
+    # सर्वर को अलग धागे (Thread) में चलाएं
+    t = Thread(target=run)
+    t.start()
+    
+    # बॉट को मुख्य धागे में चलाएं
+    bot.infinity_polling(timeout=10, long_polling_timeout=5)
+    
     
