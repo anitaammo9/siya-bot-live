@@ -17,7 +17,7 @@ def get_now():
     return datetime.now(pytz.timezone('Asia/Kolkata'))
 
 # --- 2. CONFIG ---
-API_TOKEN = '8321892139:AAEJdJfHL7MmeoeDZDUNje23n4LnS5HRY3E' # यहाँ टोकन
+API_TOKEN = '8321892139:AAE722Hd-ZQWnkjh71ugnb19fdDxKzQMpqc' # यहाँ टोकन
 CLUSTER_URL = 'mongodb+srv://Siya999:<db_password>@cluster0.b7sbepj.mongodb.net/?appName=Cluster0' # यहाँ मोंगो लिंक
 ADMIN_ID = 5042331374
 WA_NUMBER = "918766363760"
