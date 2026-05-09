@@ -8,7 +8,7 @@ from pymongo import MongoClient
 
 # --- अपनी डिटेल्स यहाँ भरें ---
 API_TOKEN = '8321892139:AAH6AEzCX6eDAcTgDrq2L1WVmbPD5pWQ8rA' 
-CLUSTER_URL = 'mongodb+srv://Siya999:Atypn7702P@cluster0.b7sbepj.mongodb.net/?appName=Cluster0' 
+CLUSTER_URL = 'mongodb+srv://siyauser:siya1711@cluster0.b7sbepj.mongodb.net/?appName=Cluster0' 
 ADMIN_ID = 5042331374
 WA_LINK = "https://wa.me/message/ZPLNFOZFRXWKP1"
 
