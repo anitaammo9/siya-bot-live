@@ -9,7 +9,7 @@ from pymongo import MongoClient
 # --- अपनी डिटेल्स यहाँ भरें ---
 API_TOKEN = '8321892139:AAHO4ddIOAf6tR2HqbAWZcuTpLZVzlSChw8' 
 CLUSTER_URL = 'mongodb+srv://Siya999:Atypn7702P@cluster0.b7sbepj.mongodb.net/?appName=Cluster0' 
-ADMIN_ID = 5042331374 
+ADMIN_ID = 5042331374
 WA_LINK = "https://wa.me/message/ZPLNFOZFRXWKP1"
 
 bot = telebot.TeleBot(API_TOKEN, threaded=False)
