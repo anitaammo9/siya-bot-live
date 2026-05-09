@@ -131,5 +131,6 @@ if __name__ == "__main__":
     bot.remove_webhook()
     time.sleep(1)
     print("EMPIRE BOT IS READY!")
-    bot.infinity_polling(skip_pending=True)
+    bot.polling(none_stop=True, interval=0, timeout=20)
+    
                               
